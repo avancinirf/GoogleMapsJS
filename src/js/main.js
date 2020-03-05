@@ -1,4 +1,51 @@
 
+class DS {
+  constructor() {
+      this.baseurl = './src/ajax.php';
+  }
+
+  getElements() {
+      const request = {
+          'action': 'getElements'
+      };
+      return $.getJSON(this.baseurl, request);
+  };
+
+  download(element, filter) {
+      const request = {
+          'action': 'download',
+          element,
+          filter
+      };
+      return $.getJSON(this.baseurl, request);
+  };
+
+  unlinkFile(url) {
+      const request = {
+          'action': 'unlinkFile',
+          url
+      };
+      return $.post(this.baseurl, request);
+  };
+}
+
+const ds = new DS();
+
+const getElements = function() {
+  return new Promise((resolve, reject) => {
+      ds.getElements().always(function(data){
+          if (data.responseJSON) {
+              reject({'message': data.responseJSON.message});
+          }
+          resolve(data);
+      });
+  });
+};
+
+console.log(getElements());
+
+
+
 SATELITE = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
   maxZoom: 20,
   subdomains:['mt0','mt1','mt2','mt3'],
