@@ -1,0 +1,78 @@
+var pontos = {
+  "type": "FeatureCollection",
+  "features": [
+    {
+    	"type": "Feature",
+	    "properties": {"id": 1, "nome": "Ponto 01", "foto": "foto-01.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.259701146401561, -22.970689775968943]
+	    }
+	}, {
+	    "type": "Feature",
+	    "properties": {"id": 2, "nome": "Ponto 02", "foto": "foto-02.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.244848391462455, -22.965219665289698]
+	    }
+    }, {
+	    "type": "Feature",
+	    "properties": {"id": 3, "nome": "Ponto 03", "foto": "foto-03.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.281180515082724, -22.954278780035036]
+	    }
+    }, {
+	    "type": "Feature",
+	    "properties": {"id": 4, "nome": "Ponto 04", "foto": "foto-04.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.212172330596445, -22.951753834679536]
+	    }
+    }, {
+	    "type": "Feature",
+	    "properties": {"id": 5, "nome": "Ponto 05", "foto": "foto-05.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.283694058226267, -22.989623064948546]
+	    }
+    }, {
+	    "type": "Feature",
+	    "properties": {"id": 6, "nome": "Ponto 06", "foto": "foto-06.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.251017997360243, -22.972583224248829]
+	    }
+    }, {
+	    "type": "Feature",
+	    "properties": {"id": 7, "nome": "Ponto 07", "foto": "foto-07.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.255359571880902, -22.971531311812338]
+	    }
+    }, {
+	    "type": "Feature",
+	    "properties": {"id": 8, "nome": "Ponto 08", "foto": "foto-08.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.217884928649944, -22.956172458125419]
+	    }
+    }, {
+	    "type": "Feature",
+	    "properties": {"id": 9, "nome": "Ponto 09", "foto": "foto-09.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.253760044425917, -22.970479391189482]
+	    }
+    }, {
+	    "type": "Feature",
+	    "properties": {"id": 10, "nome": "Ponto 10", "foto": "foto-10.jpg"},
+	    "geometry": {
+	        "type": "Point",
+	        "coordinates": [-43.253760044425917, -22.968375525385774]
+	    }
+    }
+  ]
+};
+
+
