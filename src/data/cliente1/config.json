@@ -1,8 +1,6 @@
 {
   "client" : "Cliente Teste 01",
   "layers" : [
-    {"name": "Pontos de coleta", "fileName": "ponto_teste.geojson"},
-    {"name": "Linhas de teste", "fileName": "linha_teste.geojson"},
-    {"name": "Alguns Poliginos", "fileName": "poligono_teste.geojson"}
+    {"name": "Pontos de Coleta", "type": "Point", "fileName": "pontos_tijuca.geojson"}
   ]
 }

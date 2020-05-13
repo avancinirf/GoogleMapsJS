@@ -1,39 +1,61 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
+<html lang="pt">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Consig - WebMap</title>
 
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/b87635b0e8.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="./src/css/bootstrap.min.css" rel="stylesheet" >
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="./src/css/font-awesome.min.css">-->
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="./src/css/leaflet.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./src/css/style.css">
-    <title>WebMap</title>
-  </head>
-  <body>
-    <h3><i class="fas fa-globe-americas"></i> WebMap</h3>
-    <div id="map" class="map"></div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="src/js/jquery.js"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="/">Consig</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item <?php echo empty($_SESSION['operacao']) ? 'active' : '' ?>">
+                <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item <?php echo $_SESSION['operacao'] == 'rxrf' ? 'active' : '' ?>">
+                <a class="nav-link" href="">Downloads</a>
+            </li>
+        </ul>
+    </div>
+    <?php } ?>
+</nav>
+<main role="main" class="container" style="margin-top: 5rem !important;">
+    <div id="map" class="map"></div>
+</main>
+    <!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <!-- Leaflet JavaScript -->
     <script src="./src/js/leaflet.js"></script>
 
-    <!-- Data as GeoJson -->
-    <script src="./src/data/geojson_exemplo/floresta_tijuca.geojson"></script>
-    <script src="./src/data/geojson_exemplo/pontos_tijuca.geojson"></script>
-    
+    <!-- Dados Geográficos -->
+    <script src="./src/data/victor3/geojson/curva_nivel.geojson"></script>
+    <script src="./src/data/victor3/geojson/drenagem.geojson"></script>
+    <script src="./src/data/victor3/geojson/perimetro.geojson"></script>
+    <script src="./src/data/victor3/geojson/pontos.geojson"></script>
+    <script src="./src/data/victor3/geojson/estradas.geojson"></script>
+    <script src="./src/data/victor3/geojson/fotos.geojson"></script>
+
+
     <!-- Map JavaScript -->
     <script src="./src/js/main.js"></script>
   </body>

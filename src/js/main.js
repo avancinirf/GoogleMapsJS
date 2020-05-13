@@ -1,76 +1,166 @@
-(function(){  
+(function(){
 
-  const DS = function() {
-    baseurl = './src/ajax.php';
+    function mostraDados(e) {
+        var layer = e.target;
+        // mostraTexto(layer.feature.properties.setor, layer.feature.properties.nome);
+        mostraTexto('Nome', 'Ricardo');
+    }
 
-    const getConfig = function() {
-        const request = {
-            'action': 'getConfig',
+    function onEachFeature(feature, layer) {
+        function onEachFeature(feature, layer) {
+            layer.on({
+                mouseover: highlightFeature,
+                mouseout: resetHighlight,
+                click: mostraDados
+            });
+        }
+    }
+
+    var fotoIcon = L.icon({
+        iconUrl: '../src/img/camera.svg',
+        iconSize:     [30, 20],
+        iconAnchor:   [12, 20],
+        popupAnchor:  [-3, -15]
+    });
+
+
+
+    // Base Maps
+    var googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+        maxZoom: 20,
+        subdomains:['mt0','mt1','mt2','mt3'],
+    });
+
+    var googleStreets = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+        maxZoom: 20,
+        subdomains:['mt0','mt1','mt2','mt3']
+    });
+
+    var googleTerrain = L.tileLayer('http://{s}.google.com/vt/lyrs=p&x={x}&y={y}&z={z}',{
+        maxZoom: 20,
+        subdomains:['mt0','mt1','mt2','mt3']
+    });
+
+    var baseMaps = {
+        'Google' : googleSat,
+        'Sttreet View' : googleStreets,
+        'Terreno' : googleTerrain
+    };
+
+
+    // // Overlay Maps
+    // var dataPontos = L.geoJson(pontos, {
+    //     // Altera o ícone de um geoJson
+    //     pointToLayer: function (feature, latlng) {
+    //         return L.marker(latlng, {icon: fotoIcon});
+    //     },
+    //     onEachFeature: onEachFeature
+    // }).bindPopup(function (layer) {
+    //     return "<p style='font-size:16px; font-family: cursive;'><b>Nome: </b>"+layer.feature.properties.Field2+"</p>";
+    // });
+
+    // var dataFotos = L.geoJson(fotos, {
+    //     // Altera o ícone de um geoJson
+    //     pointToLayer: function (feature, latlng) {
+    //         return L.marker(latlng, {icon: fotoIcon});
+    //     },
+    //     onEachFeature: onEachFeature
+    // }).bindPopup(function (layer) {
+    //     return "<p style='font-size:16px; font-family: cursive;'><b>Nome: </b>"+layer.feature.properties.Field2+"</p>";
+    // });
+
+    // Overlay Maps
+    /*
+    var dataPontos = L.geoJson(pontos, {
+        // Altera o ícone de um geoJson
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {icon: fotoIcon});
+        }
+    }).bindPopup(function (layer) {
+        return "<p style='font-size:16px; font-family: cursive;'><b>Nome: </b>"+layer.feature.properties.Field2+"</p>";
+    });
+    */
+
+    // This will be run when L.geoJSON creates the point layer from the GeoJSON data.
+    function createCircleMarker( feature, latlng ){
+        // Change the values of these options to change the symbol's appearance
+        let options = {
+            radius: 4,
+            fillColor: "#f1990f",
+            color: "black",
+            weight: 1,
+            opacity: 1,
+            fillOpacity: 0.6
         };
-        return $.getJSON(baseurl, request);
-    };
-
-    const getLayer = function(layer) {
-      const request = {
-          'action': 'getLayer',
-          layer
-      };
-      return $.getJSON(baseurl, request);
-    };
-
-    return {
-      getConfig,
-      getLayer
-    }
-}();
-
-  const Manager = function() {
-    
-    let config = {};
-    let overlayMaps = {};
-    
-
-    const setConfig = function() {
-      return new Promise((resolve, reject) => {
-          DS.getConfig().always(function(data){
-              if (data.responseJSON) {
-                  reject({'message': data.responseJSON.message});
-              }
-              resolve(data);
-          });
-      });
-    };
-
-    const setOverlayMaps = function() {
-      return new Promise((resolve, reject) => {
-          DS.getConfig().always(function(data){
-              if (data.responseJSON) {
-                  reject({'message': data.responseJSON.message});
-              }
-              resolve(data);
-          });
-      });
-    };
-
-    const init = () => {
-      Manager.setConfig().then((data) => {
-        Manager.config = data;
-        
-        // TODO - Buscar os dados e fazer set nas variáveis
-      });
+        return L.circleMarker( latlng, options );
     }
 
-    return {
-      init,
-      setConfig,
-      overlayMaps,
-      setOverlayMaps
-    }
+    var dataFotos = L.geoJson(fotos, {
+        // Altera o ícone de um geoJson
+        pointToLayer: function (feature, latlng) {
+            return L.marker(latlng, {icon: fotoIcon});
+        },
+        onEachFeature: onEachFeature
+    }).bindPopup(function (layer) {
+        const info = layer.feature.properties;
+        return `
+            <p style='font-size:16px; font-family: cursive;'><b>Nome: </b> ${info.Field2}</p>
+            <img src='src/data/victor3/fotos/${info.url}' class='img-popup'>
+        `;
+    }, {'className' : 'customPopup'});
 
-  }();
-  
-  
-  Manager.init();
+    var dataPontos = L.geoJSON( pontos, { pointToLayer: createCircleMarker });
+    var dataCurvaNivel = L.geoJson(curvaNivel);
+    var dataDrenagem = L.geoJson(drenagem, {
+        style: function (feature) {
+            return {
+                weight: 3,
+                dashArray: '5, 5'
+            }
+        },
+    });
+    var dataEstradas = L.geoJson(estradas, {
+        style: function (feature) {
+            return {
+                color: "white",
+                weight: 1.5
+            }
+        },
+    });
+    var dataPerimetro = L.geoJson(perimetro, {
+        style: function (feature) {
+            return {
+                fillColor: "red",
+                color: "red",
+                weight: 2,
+                opacity: 1,
+                fillOpacity: 0.1
+            }
+        }
+    });
+    var overlayMaps = {
+        'Fotos': dataFotos,
+        'Pontos' : dataPontos,
+        'Curva de nível' : dataCurvaNivel,
+        'Drenagem' : dataDrenagem,
+        'Perimetro' : dataPerimetro,
+        'Estradas' : dataEstradas
+    };
+
+
+    // Map settings
+    // var map = L.map('map').setView([-21.933702, -43.158822], 16);
+    var map = L.map('map');
+    map.fitBounds(dataPerimetro.getBounds()); // Define a posição e zoom pelo perimetro
+
+    dataFotos.addTo(map);
+    dataDrenagem.addTo(map);
+    dataPerimetro.addTo(map);
+    dataPontos.addTo(map);
+    dataEstradas.addTo(map);
+    map.addLayer(googleSat); // Add google satelite as default
+
+    L.control.layers(baseMaps, overlayMaps).addTo(map);
 
 })();
 

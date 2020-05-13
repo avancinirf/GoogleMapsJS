@@ -14,6 +14,9 @@ try{
         }
         echo json_encode($json);
       break;
+      case 'outracoisa':
+        
+      break;
       case 'template':
         throw new Exception('mensagem de erro');
       break;
