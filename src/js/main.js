@@ -1,5 +1,17 @@
 (function(){
 
+    const $popupImg = $('.popup-img');
+
+
+    // $('#map').on('click', '.popup-img', showImage);
+    //
+    //
+    // function showImage() {
+    //     // Abrir um modal ou slideshow com a url abaixo.
+    //     $(this).attr('src');
+    // }
+
+
     function mostraDados(e) {
         var layer = e.target;
         // mostraTexto(layer.feature.properties.setor, layer.feature.properties.nome);
@@ -104,8 +116,9 @@
     }).bindPopup(function (layer) {
         const info = layer.feature.properties;
         return `
-            <p style='font-size:16px; font-family: cursive;'><b>Nome: </b> ${info.Field2}</p>
-            <img src='src/data/victor3/fotos/${info.url}' class='img-popup'>
+            <label class='popup-label'><b>Nome: </b> ${info.Field2}</label>
+            <a><img src='src/data/victor3/fotos/${info.url}' class='popup-img mx-auto d-block'
+            data-toggle='modal' data-target='#modal-full-img'></a>
         `;
     }, {'className' : 'customPopup'});
 

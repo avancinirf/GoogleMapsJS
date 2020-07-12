@@ -11,10 +11,40 @@
   color: #232323;
 }
 
-.customPopup p {
-  color: red;
+.customPopup .leaflet-popup-content-wrapper {
+  border: 1px solid #232323;
+  border-radius: 3px;
 }
 
-.img-popup {
+.customPopup .leaflet-popup-content {
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.customPopup {
+
+}
+
+.popup-img {
   height: 150px;
+  padding: 2px;
+  border: 1px solid #a5a5a5;
+}
+
+.popup-img:hover {
+  /*cursor: pointer;*/
+}
+
+.popup-label {
+  font-size: 12px;
+  color: #232323;
+}
+
+#modal-full-img {
+
+}
+
+.teste222 {
+  max-height: 80vh;
 }

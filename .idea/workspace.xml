@@ -2,59 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fa9a1e0-76e4-4edd-81bb-cb8980db7165" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ajax.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ajax.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/images/layers-2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/layers-2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/images/layers.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/layers.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/images/marker-icon-2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/marker-icon-2x.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/images/marker-icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/marker-icon.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/images/marker-shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/images/marker-shadow.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/leaflet.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/leaflet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/geojson/linha_teste.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/geojson/linha_teste.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/geojson/poligono_teste.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/geojson/poligono_teste.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/geojson/ponto_teste.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/geojson/ponto_teste.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/ortoimagem/ORTOIMAGEM_DRONE.ecw" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/ortoimagem/ORTOIMAGEM_DRONE.ecw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_Plataforma_richo.zip" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_Plataforma_richo.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.cpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.cpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.dbf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.prj" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.prj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.qpj" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.qpj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.sbn" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.sbn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.sbx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.sbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.shp" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.shp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.shx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/linha_teste.shx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.cpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.cpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.dbf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.prj" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.prj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.qpj" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.qpj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.sbn" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.sbn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.sbx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.sbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.shp" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.shp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.shx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/poligono_teste.shx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.cpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.cpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.dbf" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.dbf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.prj" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.prj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.qpj" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.qpj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.sbn" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.sbn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.sbx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.sbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.shp" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.shp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.shx" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/cliente1/shp_richo/ponto_teste.shx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/geojson_exemplo/linha_teste.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/geojson_exemplo/linha_teste.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/geojson_exemplo/poligono_teste.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/geojson_exemplo/poligono_teste.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data/geojson_exemplo/ponto_teste.geojson" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/geojson_exemplo/ponto_teste.geojson" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/camera-160527.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/camera-icon-2235488.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/camera-icon-2235488.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/leaflet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/leaflet.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1635">
-              <caret line="109" column="34" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="34" />
+            <state relative-caret-position="1800">
+              <caret line="120" column="60" selection-start-line="120" selection-start-column="60" selection-end-line="120" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -85,26 +36,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="825">
-              <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="750">
+              <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+              <folding>
+                <element signature="n#style#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/src/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state relative-caret-position="720">
+              <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -123,6 +68,7 @@
       <find>{ &quot;type&quot;: &quot;Feature&quot;, &quot;properties&quot;: { &quot;Field1&quot;: 2, &quot;Field2&quot;: &quot;BASE&quot;, &quot;Field3&quot;: 690159.85, &quot;Field4&quot;: 7573369.71, &quot;Field5&quot;: 401.7, &quot;Field6&quot;: 401.7, &quot;Field7&quot;: -21.560132764, &quot;Field8&quot;: -43.093176148700003, &quot;Field9&quot;: 690159.85, &quot;Field10&quot;: 7573369.71, &quot;Field11&quot;: 401.7, &quot;Field12&quot;: 4318116.812, &quot;Field13&quot;: -4049145.535, &quot;Field14&quot;: -2367754.756 }, &quot;geometry&quot;: { &quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [ -43.158822635421259, -21.933702121891198, 401.7 ] } },</find>
       <find>DSUU-M-25</find>
       <find>Pontos</find>
+      <find>modal1</find>
     </findStrings>
     <replaceStrings>
       <replace>'</replace>
@@ -150,12 +96,12 @@
         <option value="$PROJECT_DIR$/src/data/victor2/geojson/perimetro.geojson" />
         <option value="$PROJECT_DIR$/src/data/victor2/geojson/pontos.geojson" />
         <option value="$PROJECT_DIR$/src/teste.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/src/data/victor3/geojson/estradas.geojson" />
         <option value="$PROJECT_DIR$/src/data/victor3/geojson/fotos.geojson" />
-        <option value="$PROJECT_DIR$/src/js/main.js" />
-        <option value="$PROJECT_DIR$/src/css/style.css" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/js/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/src/css/style.css" />
       </list>
     </option>
   </component>
@@ -170,6 +116,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,7 +162,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -262,18 +208,19 @@
       <workItem from="1589127158465" duration="4927000" />
       <workItem from="1589188366425" duration="4208000" />
       <workItem from="1589311027889" duration="3236000" />
-      <workItem from="1589357933454" duration="612000" />
+      <workItem from="1589357933454" duration="1222000" />
+      <workItem from="1589393650148" duration="5140000" />
+      <workItem from="1589447345058" duration="19000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33678000" />
+    <option name="totallyTimeSpent" value="39447000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1363" y="0" width="1926" height="1203" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1782284" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18249734" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -451,10 +398,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1635">
-          <caret line="109" column="34" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="34" />
+        <state relative-caret-position="1800">
+          <caret line="120" column="60" selection-start-line="120" selection-start-column="60" selection-end-line="120" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -467,22 +421,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+        <state relative-caret-position="750">
+          <caret line="50" column="40" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="5" lean-forward="true" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+        <state relative-caret-position="720">
+          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
         </state>
       </provider>
     </entry>
